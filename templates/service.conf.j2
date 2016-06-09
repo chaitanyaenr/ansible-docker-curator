@@ -1,0 +1,15 @@
+[Unit]
+Description=Curator
+Requires=docker.service
+After=docker.service
+
+[Service]
+TimeoutStartSec=0
+Restart=on-failure
+RestartSec=10
+ExecStart=/usr/bin/docker run -d --name=curator -v "{{ files_dir }}":/opt/file nael4746/curator
+ExecStop=-/usr/bin/docker stop curator; /usr/bin/docker rm -f curator
+
+[Install]
+WantedBy=multi-user.target
+
