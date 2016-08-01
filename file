@@ -1,2 +1,2 @@
-elastic.perf.la.eng.BOS.redhat.com,80,close,days,30,baseos-logstash-,'%Y.%m.%d'
-perf.lab.eng.BOS.redhat.com,80,close,days,201,baos-logstash-,'%Y.%m.%d'
+elastic.com,80,close,days,30,baseos-logstash-,'%Y.%m.%d'
+elastic.redhat.com,80,close,days,201,baos-logstash-,'%Y.%m.%d'
